@@ -1,0 +1,46 @@
+<div class="bg-gray-100">
+    
+    <div class="container mx-auto px-4 py-8">
+        <div class="text-blue-500 text-[19px] mb-3 cursor-pointer" (click)="GoBack()">Back</div>
+        @if (details$ | async; as detail){
+      <div class="flex flex-wrap -mx-4">
+       
+        <div class="w-full md:w-1/2 px-4 mb-8">
+          <img  [src]="detail?.thumbnailUrl" alt="Product"
+                      class="w-full h-auto rounded-lg shadow-md mb-4" id="mainImage">
+        
+        </div>
+  
+        <div class="w-full md:w-1/2 px-4">
+          <h2 class="text-3xl font-bold mb-2">{{detail?.title}}</h2>
+          <p class="text-gray-600 mb-4">SKU: WH1000XM4</p>
+          <div class="mb-4">
+            <span class="text-2xl font-bold mr-2">$349.99</span>
+            <span class="text-gray-500 line-through">$399.99</span>
+          </div>
+      
+          <p class="text-gray-700 mb-6">Experience premium sound quality and industry-leading noise cancellation
+            with
+            these wireless headphones. Perfect for music lovers and frequent travelers.</p>
+  
+     
+  
+      
+  
+     
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Key Features:</h3>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>Industry-leading noise cancellation</li>
+              <li>30-hour battery life</li>
+              <li>Touch sensor controls</li>
+              <li>Speak-to-chat technology</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    }
+    </div>
+  
+   
+  </div>

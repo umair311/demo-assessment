@@ -1,0 +1,9 @@
+.custome-header{
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    top: 0;
+}
+.h-bodyHeight{
+    height: calc(100vh - 61px);
+}
